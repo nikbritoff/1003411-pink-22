@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Никита Бритов](https://up.htmlacademy.ru/adaptive/22/user/1003411).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
