@@ -10,7 +10,9 @@
         <img src="img/logo-pink-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк">
       </a>
       <nav class="main-nav">
-        <button class="mian-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="mian-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
             <a href="#">Главная</a>
@@ -34,24 +36,24 @@
 
       <section class="app-info">
         <h2 class="visually-hidden">О приложении Pink</h2>
-        <div class="app-info__demonstration">
+        <div class="app-info__demonstration demonstration">
           <p class="demonstration__slogan">Взгляните на жизнь иначе!</p>
         </div>
-        <div class="app-info__download">
-          <a class="button download__button" href="#"></a>
-          <ul class="download-links__list">
-            <li class="download-links__item link-apple">
-              <a href="#">
+        <div class="app-info__download download">
+          <a class="button download__button" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="#" class="download__link download__link--apple">
                 <span class="visually-hidden">Скачать в App Store</span>
               </a>
             </li>
-            <li class="download-links__item  link-android">
-              <a href="#">
+            <li class="download__item">
+              <a href="#" class="download__link download__link--android">
                 <span class="visually-hidden">Скачать в Play Market</span>
               </a>
             </li>
-            <li class="download-links__item link-windows">
-              <a href="#">
+            <li class="download__item">
+              <a href="#" class="download__link download__link--microsoft">
                 <span class="visually-hidden">Скачать в Microsoft Store</span>
               </a>
             </li>
@@ -62,111 +64,111 @@
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества Pink</h2>
-        <div class="features__titles ask-answer-block">
-          <p class="ask-answer-block__ask">Устали от серости мегаполиса?</p>
-          <p class="ask-answer-block__answer">Нам есть, что вам предложить!</p>
+        <div class="features__titles ask-answer">
+          <p class="ask-answer__ask">Устали от серости мегаполиса?</p>
+          <p class="ask-answer__answer">Нам есть, что вам предложить!</p>
         </div>
-        <uL class="features__list">
+        <ul class="features__list">
           <li class="features__item">
-            <b class="caption">Поднимает настроение</b>
+            <h3 class="features__caption">Поднимает настроение</h3>
             <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="features__item">
-            <b class="caption">Меняет мир вокруг</b>
+            <h3 class="features__caption">Меняет мир вокруг</h3>
             <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="features__item">
-            <b class="caption">Заводит новых друзей</b>
+            <h3 class="features__caption">Заводит новых друзей</h3>
             <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
-        </uL>
+        </ul>
         <div class="features__facts">
           <div class="facts">
-            <b class="caption facts__caption">Эффект на 24 часа!</b>
+            <b class="facts__caption">Эффект на 24 часа!</b>
             <p class="facts__text">Британские ученые провели исследования и доказали,
               что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="facts__link" href="#">Узнать больше об исследовании</a>
           </div>
-          <a class="facts__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper">
-        <ul class="reviews__list slider">
-          <li class="reviews__item slider__item">
-            <div class="reviews__author">
-              <b class="author__name">Николай Петров</b>
-              <p class="author__info">25 лет, водитель трамвая</p>
-            </div>
-            <blockquote class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </blockquote>
-          </li>
-        </ul>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
-        </div>
-        <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <div class="reviews__author author">
+                <b class="author__name">Николай Петров</b>
+                <p class="author__info">25 лет, водитель трамвая</p>
+              </div>
+              <blockquote class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+            </li>
+          </ul>
+          <button class="reviews__selector reviews__selector--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__selector reviews__selector--next" type="button">Следующий отзыв</button>
+          <div class="slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
 
       <section class="tariffs">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <div class="tariffs__wrapper">
-          <table class="tariffs__table">
+        <div class="tariffs__wrapper slider">
+          <table class="tariffs__table slider__list">
             <tr class="tariffs__row">
               <th></th>
-              <th class="tariffs__header">
+              <th class="tariffs__header slider__item">
                 <b class="tariffs__name">База</b>
                 <p class="tariffs__price">1,99 USD</p>
               </th>
-              <th class="tariffs__header tariffs__hit">
-                <b class="tariffs__name">СТАНДАРТ</b>
+              <th class="tariffs__header tariffs__header--hit slider__item">
+                <b class="tariffs__name">Стандарт</b>
                 <p class="tariffs__price">3,99 USD</p>
               </th>
-              <th>
-                <b class="tariffs__name">АНЛИМ</b>
+              <th class="tariffs__header slider__item">
+                <b class="tariffs__name">Анлим</b>
                 <p class="tariffs__price">9,99 USD</p>
               </th>
             </tr>
             <tr class="tariffs__row">
-              <td class="tariffs__function">Розовый фильтр</td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
+              <td class="tariffs__function slider__item">Розовый фильтр</td>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
               </td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
               </td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
-              </td>
-            </tr>
-            <tr class="tariffs__row">
-              <td class="tariffs__function">Смайлики</td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
-              </td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
-              </td>
-              <td>
-                <span class="visually-hidden tariffs__not-includ">Не включено</span>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
               </td>
             </tr>
             <tr class="tariffs__row">
-              <td class="tariffs__function">Комментарии</td>
-              <td>
-                <span class="visually-hidden tariffs__includ">Включено</span>
+              <td class="tariffs__function slider__item">Смайлики</td>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
               </td>
-              <td>
-                <span class="visually-hidden tariffs__not-includ">Не включено</span>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
               </td>
-              <td>
-                <span class="visually-hidden tariffs__not-includ">Не включено</span>
+              <td class="slider__item tariffs__mark tariffs__mark--not-includ">
+                <span class="visually-hidden">Не включено</span>
+              </td>
+            </tr>
+            <tr class="tariffs__row">
+              <td class="tariffs__function slider__item">Комментарии</td>
+              <td class="slider__item tariffs__mark tariffs__mark--includ">
+                <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="slider__item tariffs__mark tariffs__mark--not-includ">
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="slider__item tariffs__mark tariffs__mark--not-includ">
+                <span class="visually-hidden">Не включено</span>
               </td>
             </tr>
           </table>
@@ -186,15 +188,15 @@
         </div>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <b class="caption contacts__caption">Звоните:</b>
+            <b class="contacts__caption">Звоните:</b>
             <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <b class="caption contacts__caption">Пишите:</b>
+            <b class="contacts__caption">Пишите:</b>
             <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <b class="caption contacts__caption">Приезжайте в гости:</b>
+            <b class="contacts__caption">Приезжайте в гости:</b>
             <address class="contacts__info">ул. Большая Конюшенная, 19/8</address>
           </li>
         </ul>
@@ -206,10 +208,10 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="#">
         <img src="img/logo-footer-pink.svg" width="145" height="40" alt="HTML Academy: Пинк Главная страница">
       </a>
-      <section class="page-footer__social">
+      <section class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
           <li class="social__item">
