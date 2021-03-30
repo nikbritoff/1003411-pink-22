@@ -33,117 +33,113 @@
   </header>
 
   <main class="page__main">
-    <div class="contest-info">
-      <h1 class="contest-info__caption">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-info">
+      <h1 class="page-info__caption">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
 
-    <section class="entry">
+    <section class="competition">
       <h2 class="visually-hidden">Форма заявки на участие</h2>
-      <p class="entry__text entry-addictional">Поделитесь своей историей и получите шанс выиграть
+      <p class="competition__text competition-addictional">Поделитесь своей историей и получите шанс выиграть
         ценный приз — 1000 миль на вашу бонусную карту!
-        <span class="entry-addictional__text"> Пожалуйста, заполните форму ниже:</span>
+        <span class="competition-addictional__text"> Пожалуйста, заполните форму ниже:</span>
       </p>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
+        <fieldset class="form__group text-info">
+          <legend class="visually-hidden">ФИО участника:</legend>
+          <ul class="text-info__list">
+            <li class="text-info__item text-field">
+              <label class="text-field__label" for="surname">Фамилия:</label>
+              <input class="text-field__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="text-info__item text-field">
+              <label class="text-field__label" for="name">Имя:</label>
+              <input class="text-field__input" type="text" id="name" name="name" placeholder="Введите ваше имя *"
+                required>
+            </li>
+            <li class="text-info__item text-field">
+              <label class="text-field__label" for="patronymic">Отчество:</label>
+              <input class="text-field__input" type="text" id="patronymic" name="patronymic"
+                placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__group choice-info">
+          <legend class="choice-info__caption">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="choice-info__list">
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" checked>
+              <label class="choice-field__label" for="selfie-with-shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="sun-backing" id="sun-backing"
+                checked>
+              <label class="choice-field__label" for="sun-backing">Обгорел на пляже</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="saw-Chuck-Norris"
+                id="saw-Chuck-Norris">
+              <label class="choice-field__label" for="saw-Chuck-Norris">Видел Чака Норриса</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="bougth-souvenirs"
+                id="bougth-souvenirs">
+              <label class="choice-field__label" for="bougth-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="hold-tower" id="hold-tower" checked>
+              <label class="choice-field__label" for="hold-tower">Удержал башню</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__checkbox" type="checkbox" name="trashed-hotel" id="trashed-hotel">
+              <label class="choice-field__label" for="trashed-hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__group text-info">
+          <legend  class="visually-hidden">Контактная информация:</legend>
+          <ul class="text-info__list">
+            <li class="text-info__item text-field">
+              <label class="text-field__label" for="phone">Номер телефона</label>
+              <input class="text-field__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="text-info__item text-field">
+              <label class="text-field__label" for="email">Адрес почты</label>
+              <input class="text-field__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__group choice-info">
+          <legend class="choice-info__caption">С каким приложением путешествовали?</legend>
+          <ul class="choice-info__list">
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__radio" type="radio" name="app" id="ios" checked>
+              <label class="choice-field__label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__radio" type="radio" name="app" id="android">
+              <label class="choice-field__label" for="android">Pink на Android</label>
+            </li>
+            <li class="choice-info__item choice-field">
+              <input class="choice-field__radio" type="radio" name="app" id="windows-phone">
+              <label class="choice-field__label" for="windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form__comment comment">
+          <label class="comment__caption">Опишите свои эмоции</label>
+          <textarea class="comment__text" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+
+        <div class="form__submit submit">
+          <button class="submit__button" type="submit">Отправить форму</button>
+          <p class="submit__footnote">* — обязательные поля</p>
+        </div>
+      </form>
     </section>
-
-    <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
-
-      <fieldset class="form__group field">
-        <legend class="field__caption visually-hidden">ФИО участника:</legend>
-        <ul class="field__list">
-          <li class="field__item text-info">
-            <label class="text-info__label" for="surname">Фамилия:</label>
-            <input class="text-info__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-          </li>
-          <li class="field__item text-info">
-            <label class="text-info__label" for="name">Имя:</label>
-            <input class="text-info__input" type="text" id="name" name="name" placeholder="Введите ваше имя *"
-              required>
-          </li>
-          <li class="field__item text-info">
-            <label class="text-info__label" for="patronymic">Отчество:</label>
-            <input class="text-info__input" type="text" id="patronymic" name="patronymic"
-              placeholder="Ну и отчество тоже">
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="form__group field">
-        <legend class="field__caption">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="field__list">
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" checked>
-            <label class="choice-info__label" for="selfie-with-shark">Сделал селфи с акулой</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="sun-backing" id="sun-backing"
-              checked>
-            <label class="choice-info__label" for="sun-backing">Обгорел на пляже</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="saw-Chuck-Norris"
-              id="saw-Chuck-Norris">
-            <label class="choice-info__label" for="saw-Chuck-Norris">Видел Чака Норриса</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="bougth-souvenirs"
-              id="bougth-souvenirs">
-            <label class="choice-info__label" for="bougth-souvenirs">Накупил сувениров</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="hold-tower" id="hold-tower" checked>
-            <label class="choice-info__label" for="hold-tower">Удержал башню</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__checkbox" type="checkbox" name="trashed-hotel" id="trashed-hotel">
-            <label class="choice-info__label" for="trashed-hotel">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="form__group field">
-        <legend  class="field__caption visually-hidden">Контактная информация:</legend>
-        <ul class="field__list">
-          <li class="field__item text-info">
-            <label class="text-info__label" for="phone">Номер телефона</label>
-            <input class="text-info__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-          </li>
-          <li class="field__item text-info">
-            <label class="text-info__label" for="email">Адрес почты</label>
-            <input class="text-info__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="form__group field">
-        <legend class="field__caption">С каким приложением путешествовали?</legend>
-        <ul class="field__list">
-          <li class="field__item choice-info">
-            <input class="choice-info__radio" type="radio" name="app" id="ios" checked>
-            <label class="choice-info__label" for="ios">Pink для iOS</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__radio" type="radio" name="app" id="android">
-            <label class="choice-info__label" for="android">Pink на Android</label>
-          </li>
-          <li class="field__item choice-info">
-            <input class="choice-info__radio" type="radio" name="app" id="windows-phone">
-            <label class="choice-info__label" for="windows-phone">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <div class="form__comment comment">
-        <label class="comment__caption">Опишите свои эмоции</label>
-        <textarea class="comment__text" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </div>
-
-      <div class="form__submit submit">
-        <button class="submit__button" type="submit">Отправить форму</button>
-        <p class="submit__footnote">* — обязательные поля</p>
-      </div>
-
-    </form>
-
   </main>
 
   <footer class="page-footer">
