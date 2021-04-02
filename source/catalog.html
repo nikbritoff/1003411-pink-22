@@ -18,7 +18,7 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a href="#">Фотографии</a>
+            <a href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a href="form.html">Конкурс</a>
@@ -40,7 +40,9 @@
         <p class="users-photos__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="users-photos__list">
           <li class="users-photos__item post post--best-of-day">
-            <img class="post__image" width="320" height="137" src="https://dummyimage.com/320x137/000/00ffc4.jpg" alt="Мост в скайпарке">
+            <a href="#">
+              <img class="post__image" width="320" height="137" src="https://dummyimage.com/320x137/000/00ffc4.jpg" alt="Мост в скайпарке">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Анна</b>
@@ -51,7 +53,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Фотоссесия">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Фотоссесия">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Левон</b>
@@ -62,7 +66,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Барабаны">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Барабаны">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Антон</b>
@@ -73,7 +79,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Крыша из стекла">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Крыша из стекла">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Борис</b>
@@ -84,7 +92,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Прилавок">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Прилавок">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Сергей</b>
@@ -95,7 +105,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Отдых на горе">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Отдых на горе">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Максим</b>
@@ -106,7 +118,9 @@
             </div>
           </li>
           <li class="users-photos__item post">
-            <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Крыло самолета на фоне заката">
+            <a href="#">
+              <img class="post__image" width="280" height="180" src="https://dummyimage.com/280x180/000/00ffc4.jpg" alt="Крыло самолета на фоне заката">
+            </a>
             <div class="post__info description">
               <div class="description__info">
                 <b class="description__author">Надежда</b>
@@ -124,25 +138,38 @@
         <h2 class="visually-hidden">Загрузка нового фото</h2>
         <p class="upload__caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <img class="upload__preview" width="280" height="374" src="https://dummyimage.com/280x374/d61cd6/000000.jpg" alt="Превью фото">
-        <ul class="upload__filters-list">
-          <li class="upload__filters-item filter filter--crop">
-            <div class="filter__range">
-              <div class="filter__toggle"></div>
-            </div>
-          </li>
-          <li class="upload__filters-item filter filter--fill">
-            <div class="filter__range">
-              <div class="filter__toggle"></div>
-            </div>
-          </li>
-          <li class="upload__filters-item filter filter--contrast">
-            <div class="filter__range">
-              <div class="filter__toggle"></div>
-            </div>
-          </li>
-        </ul>
-        <a class="upload__button upload__button--send" href="#">Запостить</a>
-        <button class="upload__button upload__button--cancel" type="button">Отмена</button>
+        <form class="upload__form add-photo-form"  action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset class="add-photo-form__filters">
+            <ul class="add-photo-form__filters-list">
+              <li class="add-photo-form__filters-item filter filter--crop">
+                <label class="visually-hidden">Обрезать фото
+                  <input class="visually-hidden" type="range" min="0" max="100" value="83" name="crop">
+                </label>
+                <div class="filter__range">
+                  <div class="filter__toggle"></div>
+                </div>
+              </li>
+              <li class="add-photo-form__filters-item filter filter--fill">
+                <label class="visually-hidden">Закрасить фото
+                  <input class="visually-hidden" type="range" min="0" max="100" value="16" name="fill">
+                </label>
+                <div class="filter__range">
+                  <div class="filter__toggle"></div>
+                </div>
+              </li>
+              <li class="add-photo-form__filters-item filter filter--contrast">
+                <label class="visually-hidden">Изменить контрастность
+                  <input class="visually-hidden" type="range" min="0" max="100" value="51" name="contrast">
+                </label>
+                <div class="filter__range">
+                  <div class="filter__toggle"></div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="upload__button upload__button--send" type="submit">Запостить</button>
+          <button class="upload__button upload__button--cancel" type="reset">Отмена</button>
+        </form>
       </section>
     </main>
 
