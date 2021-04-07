@@ -1,6 +1,7 @@
 .facts {
   background-color: $basic-white;
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
