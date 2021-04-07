@@ -1,0 +1,29 @@
+.reviews {
+  color: $dark-blue;
+  text-align: center;
+  width: 100%;
+}
+
+.reviews__wrapper {
+  // max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews__item {
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+
+  padding: 0;
+  margin: 0;
+}

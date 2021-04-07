@@ -1,1 +1,28 @@
 // Начните писать стили здесь
+@import "../sass/global/fonts.scss";
+@import "../sass/global/colors.scss";
+@import "../sass/global/visually-hidden.scss";
+@import "../sass/global/screen-width.scss";
+
+@import "../sass/blocks/page.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/app-info.scss";
+@import "../sass/blocks/demonstration.scss";
+@import "../sass/blocks/download.scss";
+@import "../sass/blocks/features.scss";
+@import "../sass/blocks/ask-answer.scss";
+@import "../sass/blocks/facts.scss";
+@import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/author.scss";
+@import "../sass/blocks/tariffs.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/ask-answer-block.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/copyright.scss"
+
+
+
+// @import "../sass/blocks";

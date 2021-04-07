@@ -1,0 +1,15 @@
+.copyright {
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: $dark-blue;
+}
+
+.copyright__link {
+  display: flex;
+}
+
+.copyright__link:hover path {
+  fill: $dark-blue;
+}

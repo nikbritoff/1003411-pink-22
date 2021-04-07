@@ -1,0 +1,21 @@
+.features {
+  background-color: $light-gray;
+  color: $dark-blue;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__item {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.features__caption {
+  color: $basic-black;
+  font-size: 18px;
+  line-height: 24px;
+}

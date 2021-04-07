@@ -1,0 +1,26 @@
+.facts {
+  background-color: $basic-white;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.facts__caption {
+  color: $basic-black;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.facts__text {
+  color: $dark-blue;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.facts__link {
+  color: $basic-pink;
+  font-size: 14px;
+  line-height: 24px;
+}
