@@ -3,6 +3,7 @@
 @import "global/colors.scss";
 @import "global/visually-hidden.scss";
 @import "global/screen-width.scss";
+@import "global/box-sizing.scss";
 @import "blocks/page.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
@@ -21,3 +22,11 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/page-info.scss";
+@import "blocks/competition.scss";
+@import "blocks/competition-addictional.scss";
+@import "blocks/form.scss";
+@import "blocks/text-info.scss";
+@import "blocks/text-field.scss";
+@import "blocks/choice-info.scss";
+@import "blocks/choice-field.scss";
