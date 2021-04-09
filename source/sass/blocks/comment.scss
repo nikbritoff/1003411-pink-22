@@ -1,0 +1,25 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.comment__caption {
+  color: $primary-pink;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  color: $blue-700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 22px 20px;
+  border: 2px solid $gray-200;
+  border-radius: 1px;
+}
+
+.comment__text::placeholder {
+  color: $blue-700;
+}
