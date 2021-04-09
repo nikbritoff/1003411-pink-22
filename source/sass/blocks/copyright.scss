@@ -3,7 +3,7 @@
   line-height: 18px;
   display: flex;
   align-items: center;
-  color: $dark-blue;
+  color: $blue-700;
 }
 
 .copyright__link {
@@ -11,5 +11,5 @@
 }
 
 .copyright__link:hover path {
-  fill: $dark-blue;
+  fill: $blue-700;
 }

@@ -1,5 +1,5 @@
 .tariffs {
-  background-color: $light-gray;
+  background-color: $gray-100;
 }
 
 .tariffs__wrapper {
@@ -10,7 +10,7 @@
 
 
 .tariffs__table {
-  background-color: $basic-white;
+  background-color: $white;
   border-collapse: collapse;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .tariffs__header {
-  background-color: $dark-blue;
-  color: $basic-white;
+  background-color: $blue-700;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
-  border-right: 2px solid $special-gray;
+  border-right: 2px solid $gray-200;
 }
 
 .tariffs__header:last-child {
@@ -31,7 +31,7 @@
 }
 
 .tariffs__header--empty {
-  background-color: $light-gray;
+  background-color: $gray-100;
 }
 
 .tariffs__name {
@@ -47,14 +47,14 @@
 }
 
 .tariffs__function {
-  color: $dark-blue;
+  color: $blue-700;
   font-size: 14px;
   line-height: 30px;
-  border: 2px solid $special-gray;
+  border: 2px solid $gray-200;
 }
 
 .tariffs__mark {
-  border: 2px solid $special-gray;
+  border: 2px solid $gray-200;
   background-position: center;
   background-repeat: no-repeat;
 }

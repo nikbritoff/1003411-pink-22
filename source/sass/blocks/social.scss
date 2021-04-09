@@ -11,17 +11,18 @@
 
 .social__link {
   display: block;
-  width: 48px;
-  height: 48px;
-  background-color: $basic-white;
-  border: 3px solid fade-out($dark-blue, 0.9);
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  background-color: $white;
+  border: 3px solid rgba($blue-700, 0.1);
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .social__link:hover {
-  border-color: $dark-blue;
+  border-color: $blue-700;
 }
 
 .social__link--twitter {
