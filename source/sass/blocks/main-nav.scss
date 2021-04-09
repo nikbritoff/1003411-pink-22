@@ -1,0 +1,40 @@
+.main-nav {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  list-style: none;
+  background-color: $blue-700;
+}
+
+.main-nav__item a {
+  color: $white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 1px solid pink;
+  outline-offset: -1px;
+}
+
+
+.main-nav__toggle {
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/icon-main-nav-toggle--open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  outline-offset: -1px;
+  outline: 1px solid coral;
+}

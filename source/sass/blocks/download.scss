@@ -1,0 +1,37 @@
+.download {
+  background-color: $blue-800;
+  color: $white;
+}
+
+.download__list {
+  list-style: none;
+  padding: 0;
+}
+
+.download__button {
+  border-color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.download__link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download__link--apple {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.download__link--android {
+  background-image: url("../img/logo-android.svg");
+}
+
+.download__link--microsoft {
+  background-image: url("../img/logo-microsoft.svg");
+}

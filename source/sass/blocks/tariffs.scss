@@ -1,0 +1,68 @@
+.tariffs {
+  background-color: $gray-100;
+}
+
+.tariffs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.tariffs__table {
+  background-color: $white;
+  border-collapse: collapse;
+}
+
+.tariffs__row:nth-child(2) .tariffs__mark {
+  border-top: none;
+}
+
+.tariffs__header {
+  background-color: $blue-700;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 2px solid $gray-200;
+}
+
+.tariffs__header:last-child {
+  border-right: none;
+}
+
+.tariffs__header--empty {
+  background-color: $gray-100;
+}
+
+.tariffs__name {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tariffs__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.tariffs__function {
+  color: $blue-700;
+  font-size: 14px;
+  line-height: 30px;
+  border: 2px solid $gray-200;
+}
+
+.tariffs__mark {
+  border: 2px solid $gray-200;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tariffs__mark--include {
+  background-image: url("../img/icon-mark-include.svg");
+}
+
+.tariffs__mark--not-include {
+  background-image: url("../img/icon-mark-not-include.svg");
+}

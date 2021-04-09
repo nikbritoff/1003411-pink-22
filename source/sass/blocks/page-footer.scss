@@ -1,0 +1,15 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 145px;
+  height: 40px;
+}
+
+.page-footer__logo:hover path {
+  fill: $primary-pink;
+}
