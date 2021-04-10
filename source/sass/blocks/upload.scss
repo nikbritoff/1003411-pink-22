@@ -1,0 +1,36 @@
+.upload__caption {
+  color: $blue-700;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.upload__form-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.upload__form-item {
+  margin: 0;
+  padding: 0;
+}
+
+.upload__button {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.upload__button--send {
+  color: $primary-pink;
+}
+
+.upload__button--cancel {
+  color: $blue-700;
+  border-color: $blue-700;
+  opacity: 0.1;
+}
