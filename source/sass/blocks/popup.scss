@@ -1,0 +1,31 @@
+.popup__wrapper {
+  width: 320px;
+}
+
+.popup__caption {
+  color: $black;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.popup__text {
+  color: $blue-700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup__button {
+  font-family: inherit;
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  width: 276px;
+  height: 61px;
+  background-color: $primary-green;
+  border: 2px solid $primary-green;
+  border-radius: 1px;
+}

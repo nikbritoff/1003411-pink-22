@@ -1,0 +1,26 @@
+.submit {
+  text-transform: uppercase;
+}
+
+.submit__button {
+  font-family: inherit;
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  padding: 23px 45px;
+  background-color: $primary-green;
+  border: none;
+}
+
+.submit__footnote {
+  color: $blue-700;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.submit__asterisk {
+  color: $primary-pink;
+}
