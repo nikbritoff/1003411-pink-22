@@ -6,10 +6,6 @@
   display: block;
 }
 
-.filter--active .filter__icon {
-  opacity: 1;
-}
-
 .filter--active path {
   fill: $primary-pink;
 }
@@ -24,8 +20,6 @@
 
 .filter__toggle {
   position: absolute;
-  top: -7px;
-  left: 84%;
   width: 16px;
   height: 16px;
   border: 2px solid $primary-pink;
@@ -45,8 +39,4 @@
   cursor: pointer;
   border: none;
   background-color: $gray-100;
-}
-
-.filter__icon {
-  opacity: 0.3;
 }

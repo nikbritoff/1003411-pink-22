@@ -9,3 +9,13 @@
   text-align: center;
   text-decoration: none;
 }
+
+.button--send {
+  color: $primary-pink;
+}
+
+.button--cancel {
+  color: $blue-700;
+  border-color: $blue-700;
+  opacity: 0.1;
+}
