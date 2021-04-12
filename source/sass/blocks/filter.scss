@@ -1,0 +1,42 @@
+.filter--active .filter__range {
+  display: block;
+}
+
+.filter--active .filter__toggle {
+  display: block;
+}
+
+.filter--active path {
+  fill: $primary-pink;
+}
+
+.filter__range {
+  position: absolute;
+  height: 2px;
+  width: 240px;
+  background-color: $blue-700;
+  display: none;
+}
+
+.filter__toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $primary-pink;
+  border-radius: 50%;
+  background-color: $white;
+  display: none;
+}
+
+.filter__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: $gray-100;
+}

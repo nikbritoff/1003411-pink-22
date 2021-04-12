@@ -4,6 +4,7 @@
 @import "global/visually-hidden.scss";
 @import "global/screen-width.scss";
 @import "global/box-sizing.scss";
+@import "global/display-none.scss";
 @import "blocks/page.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
@@ -33,3 +34,7 @@
 @import "blocks/comment.scss";
 @import "blocks/submit.scss";
 @import "blocks/popup.scss";
+@import "blocks/users-photos.scss";
+@import "blocks/description.scss";
+@import "blocks/upload.scss";
+@import "blocks/filter.scss";

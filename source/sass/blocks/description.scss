@@ -1,0 +1,22 @@
+.description {
+  color: $blue-700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: $gray-100;
+}
+
+.description__author {
+  font-weight: 700;
+}
+
+.description__time {
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.description__likes {
+  color: $primary-pink;
+  font-size: 12px;
+  text-transform: uppercase;
+}
