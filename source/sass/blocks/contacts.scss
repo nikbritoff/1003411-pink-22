@@ -32,3 +32,11 @@
   font-style: normal;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

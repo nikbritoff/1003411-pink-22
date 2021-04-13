@@ -1,19 +1,24 @@
 .download {
   background-color: $blue-800;
   color: $white;
+
+  //
+  // padding: 28px 20px 38px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .download__list {
   list-style: none;
   padding: 0;
-}
+  margin: 0;
 
-.download__button {
-  border-color: $white;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: inherit;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .download__link {
@@ -34,4 +39,12 @@
 
 .download__link--microsoft {
   background-image: url("../img/logo-microsoft.svg");
+}
+
+.download__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
 }

@@ -3,16 +3,25 @@
   background-color: rgba($color: $black, $alpha: 0.3);
 
 
-  background:
-    url("../img/demostration-phone-screen.png") no-repeat 50% top,
-    url("../img/demostration-phone.png") no-repeat 50% top,
-    url("../img/demostration-background.png") no-repeat 50% top;
+  // background:
+  //   url("../img/demostration-phone-screen.png") no-repeat 50% top,
+  //   url("../img/demostration-phone.png") no-repeat 50% top,
+  //   url("../img/demostration-background.png") no-repeat 50% top;
   background-color: green;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 450px 750px;
     align-items: center;
     min-height: 110px;
+
+    .page-header__logo {
+      grid-column: 1 / 2;
+    }
+
+    .page-header__nav {
+      grid-column: 2 / 3;
+    }
   }
 }
 
@@ -28,5 +37,17 @@
   @media (min-width: $desktop-width) {
     min-height: 110px;
     margin-right: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__info {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__info {
+    width: auto;
   }
 }

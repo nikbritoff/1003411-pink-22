@@ -1,6 +1,6 @@
 .page-info {
   color: $white;
-  background-image: url("../img/page-info-background.png");
+  // background-image: url("../img/page-info-background.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -10,4 +10,17 @@
   line-height: 33px;
   font-weight: 300;
   text-align: center;
+}
+
+.page-info__demonstration {
+  margin-top: 29px;
+}
+
+.page-info__demonstration--index {
+  margin-top: 36px;
+  margin-bottom: 354px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 }

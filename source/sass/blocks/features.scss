@@ -19,3 +19,30 @@
   font-size: 18px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    padding-left: 50%;
+  }
+
+  .features__item {
+    text-align: left;
+  }
+
+  .features__facts {
+    padding-left: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 252px 252px 252px;
+    justify-content: center;
+  }
+
+  .features__item {
+    text-align: center;
+  }
+}

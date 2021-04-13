@@ -11,7 +11,7 @@
       <a class="page-header__logo">
         <img src="img/logo-pink-mobile.svg" width="74" height="23" alt="Пинк">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -30,19 +30,12 @@
           </li>
         </ul>
       </nav>
-    </header>
-
-    <main class="page__main">
-
-      <h1 class="visually-hidden">"Pink" - приложение, поднимающее настроение</h1>
-
-      <section class="app-info">
-        <h2 class="visually-hidden">О приложении Pink</h2>
-        <div class="app-info__demonstration demonstration">
-          <p class="demonstration__slogan">Взгляните на жизнь иначе!</p>
+      <div class="page-info page-header__info">
+        <div class="page-info__demonstration page-info__demonstration--index demonstration demonstration--index">
+          <h1 class="demonstration__slogan">Взгляните на жизнь иначе!</h1>
         </div>
-        <div class="app-info__download download">
-          <a class="button download__button" href="#">Скачать приложение</a>
+        <div class="page-info__download download">
+          <a class="button download__button button--download" href="#">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
               <a href="#" class="download__link download__link--apple">
@@ -60,10 +53,13 @@
               </a>
             </li>
           </ul>
-          <p class="app-info__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
+      </div>
 
+    </header>
+
+    <main class="page__main">
       <section class="features">
         <h2 class="visually-hidden">Преимущества Pink</h2>
         <div class="features__titles ask-answer">
