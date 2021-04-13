@@ -3,14 +3,73 @@
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (max-width: $desktop-width) {
+    .main-nav__list {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .main-nav__list {
+      position: static;
+      display: flex;
+      background-color: inherit;
+
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: none;
+    }
+
+    .main-nav__item {
+      margin-left: 78px;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened {
+
+  .main-nav__toggle {
+    background-color: green;
+  }
+
+  @media (max-width: $desktop-width) {
+    .main-nav__list {
+      display: block;
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      .main-nav__list {
+        display: flex;
+      }
+    }
+  }
+}
+
+.main-nav--closed {
+  .main-nav__list {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    .main-nav__list {
+      display: flex;
+    }
+  }
 }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
-  margin-top: 0;
   list-style: none;
   background-color: $blue-700;
+  position: absolute;
 }
 
 .main-nav__item a {
@@ -20,21 +79,28 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  outline: 1px solid pink;
-  outline-offset: -1px;
 }
 
 
 .main-nav__toggle {
+  position: absolute;
+  top: 8px;
+  right: 20px;
   width: 50px;
-  height: 24px;
+  height: 50px;
   background-image: url("../img/icon-main-nav-toggle--open.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: inherit;
   border: none;
   cursor: pointer;
+  background-color: blue;
 
-  outline-offset: -1px;
-  outline: 1px solid coral;
+  @media (min-width: $tablet-width) {
+    top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 27px;
+  }
 }
