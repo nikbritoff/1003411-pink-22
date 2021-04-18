@@ -2,20 +2,17 @@
   background-color: $blue-800;
   color: $white;
 
-  //
-  // padding: 28px 20px 38px 20px;
-
   @media (min-width: $tablet-width) {
-    background-color: inherit;
+    background: none;
   }
 }
 
 .download__list {
+  grid-column: 1 / 2;
+
   list-style: none;
   padding: 0;
   margin: 0;
-
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,6 +39,8 @@
 }
 
 .download__text {
+  grid-column: 1 / 2;
+
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;

@@ -4,8 +4,19 @@
 }
 
 .reviews__wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    outline: 2px solid yellowgreen;
+  }
 }
 
 .reviews__list {

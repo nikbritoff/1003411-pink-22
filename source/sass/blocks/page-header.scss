@@ -1,53 +1,21 @@
 .page-header {
-  position: relative;
-  background-color: rgba($color: $black, $alpha: 0.3);
-
 
   // background:
   //   url("../img/demostration-phone-screen.png") no-repeat 50% top,
   //   url("../img/demostration-phone.png") no-repeat 50% top,
   //   url("../img/demostration-background.png") no-repeat 50% top;
-  background-color: green;
+  // background-color: green;
 
+  @media (min-width: $desktop-width) {
+    min-height: 110px;
+  }
+}
+
+.page-header__nav {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 450px 750px;
-    align-items: center;
-    min-height: 110px;
-
-    .page-header__logo {
-      grid-column: 1 / 2;
-    }
-
-    .page-header__nav {
-      grid-column: 2 / 3;
-    }
-  }
-}
-
-.page-header__logo {
-  display: flex;
-  align-items: center;
-  min-height: 66px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 110px;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__info {
-    width: 300px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__info {
-    width: auto;
+    grid-template-columns: 300px 620px;
+    column-gap: 20px;
+    justify-content: center;
   }
 }

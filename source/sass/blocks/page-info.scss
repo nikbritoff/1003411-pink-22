@@ -5,6 +5,23 @@
   background-repeat: no-repeat;
 }
 
+.page-info__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 620px;
+    column-gap: 20px;
+    justify-content: center;
+    width: auto;
+  }
+}
+
 .page-info__caption {
   font-size: 24px;
   line-height: 33px;

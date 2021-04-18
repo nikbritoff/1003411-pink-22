@@ -1,17 +1,60 @@
 .features {
   background-color: $gray-100;
-  color: $blue-700;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    outline: 2px solid yellowgreen;
+  }
 }
 
 .features__list {
   list-style: none;
   padding: 0;
+
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 310px;
+
+    width: 620px;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: grid;
+    width: auto;
+    grid-template-columns: 252px 252px 252px;
+    column-gap: 68px;
+    justify-content: center;
+  }
 }
 
 .features__item {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .features__caption {
@@ -20,29 +63,8 @@
   line-height: 24px;
 }
 
-@media (min-width: $tablet-width) {
-  .features__list {
+.features__facts {
+  @media (min-width: $tablet-width) {
     padding-left: 50%;
-  }
-
-  .features__item {
-    text-align: left;
-  }
-
-  .features__facts {
-    padding-left: 50%;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .features__list {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 252px 252px 252px;
-    justify-content: center;
-  }
-
-  .features__item {
-    text-align: center;
   }
 }

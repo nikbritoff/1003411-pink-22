@@ -1,16 +1,4 @@
-.ask-answer {
-  color: $blue-700;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.2;
-  background-color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.ask-answer__wrapper {
+.wrapper {
   width: 280px;
   margin: 0 auto;
   outline: 2px solid yellow;
