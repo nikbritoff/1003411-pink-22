@@ -64,7 +64,15 @@
 }
 
 .features__facts {
+  display: none;
+
   @media (min-width: $tablet-width) {
-    padding-left: 50%;
+    display: grid;
+    grid-template-columns: 310px 310px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 470px 470px;
   }
 }

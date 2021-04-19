@@ -1,10 +1,5 @@
-.facts {
-  background-color: $white;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
+.facts__wrapper {
+  grid-column: 2 / -1;
 }
 
 .facts__caption {
