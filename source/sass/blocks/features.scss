@@ -67,12 +67,15 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 310px 310px;
-    justify-content: center;
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+    padding-left: 310px;
+    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 470px 470px;
+    width: 940px;
+    padding-left: 470px;
   }
 }
