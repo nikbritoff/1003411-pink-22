@@ -1,11 +1,5 @@
 .page-footer {
   margin: 0;
-
-  // @media (min-width: $tablet-width) {
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-  // }
 }
 
 .page-footer__wrapper {
@@ -38,6 +32,7 @@
   display: block;
   width: 145px;
   height: 40px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     justify-self: start;

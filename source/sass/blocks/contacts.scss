@@ -41,6 +41,7 @@
 
 .contacts__item:nth-child(1) {
   margin-right: auto;
+
   @media (min-width: $desktop-width) {
     order: -2;
   }
@@ -68,19 +69,12 @@
   }
 }
 
-// .contacts__item + .contacts__item {
-//   @media (min-width: $desktop-width) {
-//     margin-left: 40px;
-//   }
-// }
-
-
-// .contacts__caption {
-//   color: $blue-700;
-//   font-size: 18px;
-//   line-height: 25px;
-//   font-weight: 700;
-// }
+.contacts__caption {
+  color: $blue-700;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
 
 
 .contacts__info {
