@@ -37,8 +37,8 @@
     padding: 0;
     display: grid;
     width: auto;
-    grid-template-columns: 252px 252px 252px;
-    column-gap: 68px;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
     justify-content: center;
   }
 }
@@ -54,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding: 0 25px;
   }
 }
 

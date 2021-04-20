@@ -4,7 +4,7 @@
   //   url("../img/demostration-phone-screen.png") no-repeat 50% top,
   //   url("../img/demostration-phone.png") no-repeat 50% top,
   //   url("../img/demostration-background.png") no-repeat 50% top;
-  // background-color: green;
+  background-color: $blue-700;
 
   @media (min-width: $desktop-width) {
     min-height: 110px;
