@@ -5,3 +5,16 @@
   font-weight: 400;
   background-color: $white;
 }
+
+.form__group {
+  margin: 0;
+  // @include phone-wrapper;
+
+  // @media (min-width: $tablet-width) {
+  //   @include tablet-wrapper;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   @include desktop-wrapper;
+  // }
+}

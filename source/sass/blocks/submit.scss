@@ -2,6 +2,18 @@
   text-transform: uppercase;
 }
 
+.submit__wrapper {
+  @include phone-wrapper;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-wrapper;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-wrapper;
+  }
+}
+
 .submit__button {
   font-family: inherit;
   color: $white;
