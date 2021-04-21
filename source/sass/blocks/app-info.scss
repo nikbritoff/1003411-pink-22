@@ -3,6 +3,10 @@
     url("../img/demostration-phone-screen.png") no-repeat 50% top,
     url("../img/demostration-phone.png") no-repeat 50% top,
     url("../img/demostration-background.png") no-repeat 50% top;
+
+  @media (max-width: $tablet-width) {
+    min-height: 733px;
+  }
 }
 
 .app-info__text {

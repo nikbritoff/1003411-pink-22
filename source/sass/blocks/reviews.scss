@@ -4,8 +4,19 @@
 }
 
 .reviews__wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    outline: 2px solid yellowgreen;
+  }
 }
 
 .reviews__list {
@@ -23,4 +34,16 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
 }
