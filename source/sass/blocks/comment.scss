@@ -1,17 +1,27 @@
 .comment {
   font-weight: 400;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 51px;
+    border: 2px solid $gray-200;
+    border-radius: 1px;
+  }
 }
 
 .comment__wrapper {
-  @include phone-wrapper;
+  // @include phone-wrapper;
 
   @media (min-width: $tablet-width) {
-    @include tablet-wrapper;
+    width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    @include desktop-wrapper;
-  }
+  // @media (min-width: $desktop-width) {
+  //   @include desktop-wrapper;
+  // }
 }
 
 .comment__caption {
@@ -19,6 +29,17 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .comment__text {

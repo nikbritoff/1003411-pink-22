@@ -4,17 +4,93 @@
   line-height: 30px;
   font-weight: 400;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 620px;
+    justify-content: center;
+    grid-template-areas:
+                        "first"
+                        "second"
+                        "third"
+                        "fourth"
+                        "fifth";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 435px);
+    column-gap: 70px;
+    justify-content: center;
+    grid-template-areas:
+                        "first-1 first-2"
+                        "second second"
+                        "third third"
+                        "fourth fourth"
+                        "fifth fifth";
+  }
 }
 
 .form__group {
-  margin: 0;
-  // @include phone-wrapper;
+  margin-left: 0;
+  margin-right: 0;
+}
 
-  // @media (min-width: $tablet-width) {
-  //   @include tablet-wrapper;
-  // }
+.form__group {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   @include desktop-wrapper;
-  // }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.form__group--first-element {
+  @media (min-width: $tablet-width) {
+    grid-area: fisrt-1;
+  }
+}
+
+.form__group--second-element {
+  @media (min-width: $tablet-width) {
+    grid-area: second;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: first-2;
+  }
+}
+
+.form__group--third-element {
+  @media (min-width: $tablet-width) {
+    grid-area: third;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: second;
+  }
+}
+
+.form__group--fourth-element {
+  @media (min-width: $tablet-width) {
+    grid-area: fourth;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: third;
+  }
+}
+
+.form__group--fifth-element {
+  @media (min-width: $tablet-width) {
+    grid-area: fifth;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: fourth;
+  }
+}
+
+.form__submit {
+  grid-column: 1 / -1;
 }

@@ -26,7 +26,7 @@
           <a class="main-nav__link" href="catalog.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="form.html">Конкурс</a>
+          <a class="main-nav__link main-nav__link--current" href="">Конкурс</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">HTML Academy</a>
@@ -36,29 +36,6 @@
     <div class="page-header__info page-info">
       <div class="page-info__demonstration demonstration">
         <h1 class="demonstration__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
-
-      <div class="page-info__download page-info__download download">
-        <a class="button download__button button--download" href="#">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a href="#" class="download__link download__link--apple">
-              <span class="visually-hidden">Скачать в App Store</span>
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link download__link--android">
-              <span class="visually-hidden">Скачать в Play Market</span>
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link download__link--microsoft">
-              <span class="visually-hidden">Скачать в Microsoft Store</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
       </div>
   </header>
 
@@ -72,9 +49,9 @@
         </p>
       </div>
       <form class="competition__form form" action="https://echo.htmlacademy.ru/" method="GET">
-        <fieldset class="form__group text-info">
+        <fieldset class="form__group text-info text-info--no-border">
+          <legend class="visually-hidden">ФИО участника:</legend>
           <div class="text-info__wrapper">
-            <legend class="visually-hidden">ФИО участника:</legend>
             <ul class="text-info__list">
               <li class="text-info__item text-field">
                 <label class="text-field__label" for="surname">Фамилия:</label>
@@ -94,9 +71,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__group choice-info">
+        <fieldset class="form__group form__group--fourth-element  choice-info choice-info--wide">
+          <legend class="choice-info__caption">Ваши безбашенные достижения в путешествии</legend>
           <div class="choice-info__wrapper">
-            <legend class="choice-info__caption">Ваши безбашенные достижения в путешествии</legend>
             <ul class="choice-info__list">
               <li class="choice-info__item choice-field">
                 <input class="choice-field__checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" checked>
@@ -129,9 +106,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__group text-info">
+        <fieldset class="form__group form__group--third-element text-info text-info--contacts">
+          <legend  class="text-info__caption">Контактная информация:</legend>
           <div class="text-info__wrapper">
-            <legend  class="visually-hidden">Контактная информация:</legend>
             <ul class="text-info__list">
               <li class="text-info__item text-field">
                 <label class="text-field__label" for="phone">Номер телефона</label>
@@ -145,9 +122,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__group choice-info">
+        <fieldset class="form__group form__group--second-element choice-info">
+          <legend class="choice-info__caption">С каким приложением путешествовали?</legend>
           <div class="choice-info__wrapper">
-            <legend class="choice-info__caption">С каким приложением путешествовали?</legend>
             <ul class="choice-info__list">
               <li class="choice-info__item choice-field">
                 <input class="choice-field__radio" type="radio" name="app" id="ios" checked>
@@ -165,11 +142,13 @@
           </div>
         </fieldset>
 
-        <div class="form__comment comment">
+        <fieldset class="form__group form__group--fifth-element comment">
+          <legend class="comment__caption">Опишите свои эмоции</legend>
           <div class="comment__wrapper">
-            <label class="comment__caption">Опишите свои эмоции</label>
+            <label class="visually-hidden">Впишите Ваши эмоции в это поле</label>
             <textarea class="comment__text" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
+        </fieldset>
 
           <div class="form__submit submit">
             <div class="submit__wrapper">
@@ -179,7 +158,7 @@
               </p>
             </div>
           </div>
-        </div>
+
       </form>
     </section>
   </main>
@@ -228,7 +207,7 @@
     </div>
   </footer>
 
-  <div class="page__popup popup popup--failure popup--open">
+  <div class="page__popup popup popup--failure popup--ope">
     <div class="popup__wrapper">
       <b class="popup__caption">Что-то пошло не так!</b>
       <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
