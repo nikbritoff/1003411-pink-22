@@ -10,11 +10,11 @@
     grid-template-columns: 620px;
     justify-content: center;
     grid-template-areas:
-                        "first"
-                        "second"
-                        "third"
-                        "fourth"
-                        "fifth";
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth";
   }
 
   @media (min-width: $desktop-width) {
@@ -22,20 +22,18 @@
     column-gap: 70px;
     justify-content: center;
     grid-template-areas:
-                        "first-1 first-2"
-                        "second second"
-                        "third third"
-                        "fourth fourth"
-                        "fifth fifth";
+      "first-1 first-2"
+      "second second"
+      "third third"
+      "fourth fourth"
+      "fifth fifth";
   }
 }
 
 .form__group {
   margin-left: 0;
   margin-right: 0;
-}
 
-.form__group {
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
   }
