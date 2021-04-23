@@ -1,5 +1,24 @@
+.filter {
+  background-color: cornflowerblue;
+  outline: 1px solid salmon;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+  }
+}
+
 .filter--active .filter__range {
   display: block;
+  left: 20px;
+  bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    bottom: auto;
+  }
 }
 
 .filter--active .filter__toggle {
@@ -16,6 +35,21 @@
   width: 240px;
   background-color: $blue-700;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    width: 202px;
+    margin-right: 18px;
+    margin-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    width: 288px;
+  }
 }
 
 .filter__toggle {
@@ -27,10 +61,15 @@
   border-radius: 50%;
   background-color: $white;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter__button {
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -39,5 +78,15 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-  background-color: $gray-100;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
 }

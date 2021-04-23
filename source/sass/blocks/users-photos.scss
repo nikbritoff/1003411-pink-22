@@ -5,13 +5,38 @@
   text-align: center;
 }
 
+.users-photos__wrapper {
+  @include phone-wrapper;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-wrapper;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-wrapper;
+  }
+}
+
 .users-photos__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
 }
 
 .users-photos__item {
-  margin: 0;
-  padding: 0;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
