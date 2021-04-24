@@ -1,4 +1,8 @@
 .post--best-of-day {
+  .post__image-wrapper {
+    width: 100%;
+  }
+
   .post__info {
     width: 280px;
     margin-left: auto;
@@ -16,7 +20,13 @@
 
 .post__image-wrapper {
   background-color: $gray-100;
-  width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .post__image-link {
