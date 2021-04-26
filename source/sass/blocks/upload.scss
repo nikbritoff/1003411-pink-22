@@ -35,29 +35,38 @@
   @include phone-wrapper;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 620px;
     display: grid;
-    grid-template-columns: 300px 275px;
+    grid-template-columns: 300px 1fr;
     column-gap: 45px;
     justify-content: center;
     outline: 1px solid salmon;
+    outline-offset: -1px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    grid-template-columns: 300px 410px;
     column-gap: 90px;
+    padding-left: 80px;
+    padding-right: 90px;
   }
 }
 
 .upload__preview {
   width: 100%;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .upload__form {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
   }
 }
 
@@ -65,11 +74,10 @@
   list-style: none;
   margin: 0;
   margin-top: 40px;
-  margin-bottom: 38px;
+  // margin-bottom: 38px;
   padding: 0;
   padding-bottom: 70px;
   display: flex;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -81,12 +89,25 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+.upload__form-item + .upload__form-item {
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
   }
 }
 
 .upload_buttons-wrapper {
+  grid-column: 1 / -1;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 183px 183px;
@@ -114,5 +135,55 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+  }
+}
+
+.upload__tabs {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 40px;
+    width: auto;
+  }
+}
+
+.upload__tab {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: blueviolet;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.upload__tab + .upload__tab {
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
   }
 }

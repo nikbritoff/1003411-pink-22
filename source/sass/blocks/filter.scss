@@ -1,19 +1,17 @@
 .filter {
   background-color: cornflowerblue;
   outline: 1px solid salmon;
+  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     flex-direction: row;
-    position: relative;
   }
 }
 
 .filter--active .filter__range {
   display: block;
-  left: 20px;
-  bottom: 34px;
 
   @media (min-width: $tablet-width) {
     left: auto;
@@ -30,7 +28,7 @@
 }
 
 .filter__range {
-  position: absolute;
+  position: relative;
   height: 2px;
   width: 240px;
   background-color: $blue-700;
@@ -38,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    position: relative;
+    // position: relative;
     // margin-top: auto;
     // margin-bottom: auto;
     width: 202px;
