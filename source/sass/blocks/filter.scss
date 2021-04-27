@@ -30,23 +30,18 @@
 .filter__range {
   position: relative;
   height: 2px;
-  width: 240px;
+  // width: 240px;
   background-color: $blue-700;
   display: none;
+  left: 50%;
+  transform: translateX(-50%);
+
 
   @media (min-width: $tablet-width) {
     display: block;
-    // position: relative;
-    // margin-top: auto;
-    // margin-bottom: auto;
-    width: 202px;
-    margin-right: 18px;
-    margin-left: 28px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 30px;
-    width: 288px;
+    width: 100%;
+    left: auto;
+    transform: none;
   }
 }
 

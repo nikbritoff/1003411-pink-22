@@ -177,17 +177,17 @@
           alt="Превью фото">
         <form class="upload__form" action="https://echo.htmlacademy.ru/" method="GET">
           <div class="upload__tabs">
-            <a class="upload__tab upload__tab--crop" href="filter-crop">
+            <button class="upload__tab upload__tab--crop" type="button" role="tab" aria-controls="filter-crop" aria-selected="true">
               <span class="visually-hidden">Обрезать фото</span>
-            </a>
-            <a class="upload__tab upload__tab--fill">
+            </button>
+            <button class="upload__tab upload__tab--fill" type="button" aria-controls="filter-fill" role="tab">
               <span class="visually-hidden">Закрасить фото</span>
-            </a>
-            <a class="upload__tab upload__tab--contrast">
+            </button>
+            <button class="upload__tab upload__tab--contrast" type="button" aria-controls="filter-contrast" role="tab">
               <span class="visually-hidden">Изменить контрастность</span>
-            </a>
+            </button>
           </div>
-          <ul class="upload__form-list">
+          <ul class="upload__form-list" role="tabpanel">
             <li class="upload__form-item filter filter--active" id="filter-crop">
               <div class="filter__range">
                 <div class="filter__toggle" style="left: 84%"></div>
