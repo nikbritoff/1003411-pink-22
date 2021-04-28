@@ -1,5 +1,22 @@
+.filter {
+  background-color: cornflowerblue;
+  outline: 1px solid salmon;
+  outline-offset: -1px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
 .filter--active .filter__range {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    bottom: auto;
+  }
 }
 
 .filter--active .filter__toggle {
@@ -11,11 +28,21 @@
 }
 
 .filter__range {
-  position: absolute;
+  position: relative;
   height: 2px;
-  width: 240px;
+  // width: 240px;
   background-color: $blue-700;
   display: none;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    left: auto;
+    transform: none;
+  }
 }
 
 .filter__toggle {
@@ -27,10 +54,15 @@
   border-radius: 50%;
   background-color: $white;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter__button {
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -39,5 +71,15 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-  background-color: $gray-100;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
 }
