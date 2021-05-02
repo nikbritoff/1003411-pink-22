@@ -1,12 +1,22 @@
 .copyright {
-  font-size: 14px;
-  line-height: 18px;
   display: flex;
   align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: $blue-700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
+  margin-left: 14px;
   display: flex;
 }
 

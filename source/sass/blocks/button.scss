@@ -16,6 +16,19 @@
   line-height: 18px;
   font-weight: 700;
   color: inherit;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.button--download:hover {
+  background-color: $white;
+  color: $primary-pink;
+}
+
+.button--download:active {
+  color: rgba($color: $primary-pink, $alpha: 0.3);
 }
 
 .button--send {
