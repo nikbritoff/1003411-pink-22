@@ -40,7 +40,6 @@
   background-color: $gray-100;
   border-collapse: collapse;
   width: 840px;
-
   border: 2px solid $gray-200;
   border-top: 0;
   border-right: 0;
@@ -51,25 +50,15 @@
   }
 }
 
-.tariffs__row {
-  background-color: $white;
-}
-
-// .tariffs__row:nth-child(2) .tariffs__mark {
-//   border-top: none;
-// }
-
 .tariffs__header {
   background-color: $blue-700;
   color: $white;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 1px 0 0 0;
-  border: 2px solid $blue-700;
   border-right: 2px solid $gray-200;
   width: 280px;
-  padding-top: 10px;
-  padding-bottom: 27px;
+  padding-top: 11px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     width: 156px;
@@ -83,25 +72,23 @@
   }
 }
 
-.tariffs__header:last-child {
-  border-right: none;
-}
-
-.tariffs__header:nth-child(2) {
+.tariffs__header--rounded-corner {
   border-radius: 5px 0 0 0;
-  border-left: 0;
-  border-top: 0;
 }
 
 .tariffs__header--empty {
   background-color: $gray-100;
   display: none;
   border: 2px solid $gray-100;
-  // border-right: 2px solid $blue-700;
+  border-bottom: 2px solid $gray-200;
 
   @media (min-width: $tablet-width) {
     display: table-cell;
   }
+}
+
+.tariffs__row {
+  background-color: $white;
 }
 
 .tariffs__name {
@@ -188,5 +175,5 @@
 }
 
 .tariffs__toggles {
-  margin-top: 36px;
+  margin-top: 32px;
 }
