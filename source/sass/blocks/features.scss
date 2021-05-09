@@ -85,24 +85,24 @@
 .features__item--gray {
   @media (min-width: $desktop-width) {
     background:
-        url("../img/background-iphone-screen-gray.png") no-repeat left 62px top 45px,
-        url("../img/background-iphone-no-screen.png") no-repeat center top 5px;
+      url("../img/background-iphone-screen-gray.png") no-repeat left 62px top 45px,
+      url("../img/background-iphone-no-screen.png") no-repeat center top 5px;
   }
 }
 
 .features__item--pink {
   @media (min-width: $desktop-width) {
     background:
-        url("../img/background-iphone-screen-pink.png") no-repeat left 64px top 45px,
-        url("../img/background-iphone-no-screen.png") no-repeat center top 5px;
+      url("../img/background-iphone-screen-pink.png") no-repeat left 64px top 45px,
+      url("../img/background-iphone-no-screen.png") no-repeat center top 5px;
   }
 }
 
 .features__item--hello {
   @media (min-width: $desktop-width) {
     background:
-        url("../img/background-iphone-screen-pink-hello.png") no-repeat left 68px top 45px,
-        url("../img/background-iphone-no-screen.png") no-repeat left 2px top 5px;
+      url("../img/background-iphone-screen-pink-hello.png") no-repeat left 68px top 45px,
+      url("../img/background-iphone-no-screen.png") no-repeat left 2px top 5px;
   }
 }
 
