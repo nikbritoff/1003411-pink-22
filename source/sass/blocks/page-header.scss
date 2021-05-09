@@ -16,21 +16,21 @@
 
 .page-header--index {
   background:
-    url("../img/background-page-header-phone--mobile.png") no-repeat 50% 39%,
-    url("../img/demostration-background.png") no-repeat 50% top;
+    url("../img/background-page-header-phone--mobile.png") no-repeat center top 175px,
+    url("../img/demostration-background.png") no-repeat center top;
   background-color: $blue-700;
 
   @media (min-width: $tablet-width) {
     background:
-      url("../img/background-page-header-phone--tablet.png") no-repeat 50% 100%,
-      url("../img/background-page-header--tablet.png") no-repeat 50% top;
+      url("../img/background-page-header-phone--tablet.png") no-repeat center bottom,
+      url("../img/background-page-header-tablet.png") no-repeat center top;
     background-color: $blue-700;
   }
 
   @media (min-width: $desktop-width) {
     background:
-      url("../img/background-page-header-phone--desktop.png") no-repeat 97% 100%,
-      url("../img/background-page-header--desktop.png") no-repeat 50% top;
+      url("../img/background-page-header-phone--desktop.png") no-repeat calc(50%  + 70px) bottom,
+      url("../img/background-page-header-desktop.png") no-repeat center top;
     background-color: $blue-700;
   }
 }
