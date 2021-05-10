@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 61px;
   }
 }
 
@@ -117,22 +117,6 @@
   }
 }
 
-.contacts__location {
-  margin-top: 34px;
-  width: 100%;
-  height: 200px;
-  background-color: rosybrown;
-
-  @media (min-width: $tablet-width) {
-    height: 374px;
-    margin-top: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 502px;
-  }
-}
-
 .contacts__caption {
   color: $blue-700;
   font-size: 18px;
@@ -168,4 +152,55 @@
 .contacts__info--mail:active {
   color: rgba($color: $blue-700, $alpha: 0.3);
   text-decoration: none;
+}
+
+.contacts__location {
+  width: 100%;
+  height: 200px;
+  margin-top: 34px;
+  position: relative;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+    margin-top: 22px;
+    background-image: url("../img/map-tablet.png");
+    background-size: 660px 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    background-image: url("../img/map-desktop.png");
+    background-size: 1200px 502px;
+  }
+}
+
+.contacts__location::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  display: block;
+  width: 100%;
+  height: 34px;
+  background-image: url("../img/background-triangle-center.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 103px;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
