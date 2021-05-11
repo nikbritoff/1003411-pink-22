@@ -3,20 +3,95 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.text-field--contacts {
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+
+    position: relative;
+  }
+
+  .text-field__label {
+    @media (min-width: $tablet-width) {
+      align-self: flex-start;
+      margin-top: 8px;
+      margin-left: 16px;
+    }
+  }
+
+  .text-field__input {
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      padding-right: 70px;
+    }
+  }
+}
+
+.text-field--contacts::after {
+  content: "";
+  display: none;
+  height: 60px;
+  width: 61px;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  background-color: $gray-200;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 61px;
+    top: 1px;
+  }
 }
 
 .text-field__label {
   color: $primary-pink;
   font-size: 14px;
   text-transform: uppercase;
+  padding: 0 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    align-self: center;
+  }
 }
 
 .text-field__input {
+  font-family: "Open Sans", "Arial", sans-serif;
   color: $blue-700;
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   border: 2px solid $gray-200;
   border-radius: 1px;
-  padding: 23px 20px;
+  padding: 15px 20px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 19px;
+    width: 100%;
+  }
+}
+
+.text-field__input:hover {
+  border-color: $blue-700;
+}
+
+.text-field__input:focus {
+  outline-color: $primary-pink;
 }
 
 .text-field__input::placeholder {

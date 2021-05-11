@@ -9,6 +9,7 @@
     @include tablet-wrapper;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,17 +25,52 @@
   font-weight: 700;
   text-transform: uppercase;
   display: block;
-  padding: 23px 45px;
+  padding: 15px 45px;
   background-color: $primary-green;
-  border: none;
+  border: 2px solid $primary-green;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 55px;
+  }
+}
+
+.submit__button:hover {
+  background-color: $green-300;
+  border-color: $green-300;
+}
+
+.submit__button:active {
+  color: rgba($white, 0.3);
+}
+
+.submit__button:disabled {
+  background-color: $gray-200;
+  border-color: $gray-200;
 }
 
 .submit__footnote {
   color: $blue-700;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .submit__asterisk {
   color: $primary-pink;
+}
+
+
+.submit__addictional {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }

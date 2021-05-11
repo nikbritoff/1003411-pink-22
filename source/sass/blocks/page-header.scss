@@ -4,13 +4,13 @@
   background-color: $blue-700;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/background-page-header--tablet.png");
+    background-image: url("../img/background-page-header-tablet.png");
     min-height: 440px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 394px;
-    background-image: url("../img/background-page-header--desktop.png");
+    background-image: url("../img/background-page-header-desktop.png");
   }
 }
 

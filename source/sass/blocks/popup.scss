@@ -1,7 +1,10 @@
 .popup {
-  padding-top: 44px;
+  padding-top: 36px;
   padding-bottom: 0;
   background-color: $white;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba($black, 0.15);
+  border-radius: 1px;
 }
 
 .popup--success {
@@ -19,6 +22,12 @@
 }
 
 .popup--failure {
+  .popup__text {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
   .popup__buttons-container {
     @media (max-width: $mobile-width-only) {
       padding-bottom: 0;
@@ -26,7 +35,7 @@
 
     @media (max-width: $tablet-width-only) {
       background-color: $white;
-      padding-top: 0;
+      padding-top: 6px;
       padding-bottom: 52px;
     }
   }
@@ -42,7 +51,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: 330px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,12 +64,31 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0;
+  }
 }
 
 .popup__text {
   color: $blue-700;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .popup__buttons-container {

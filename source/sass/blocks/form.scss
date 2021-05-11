@@ -15,6 +15,7 @@
       "third"
       "fourth"
       "fifth";
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,15 +28,18 @@
       "third third"
       "fourth fourth"
       "fifth fifth";
+    margin-bottom: 3px;
   }
 }
 
 .form__group {
   margin-left: 0;
   margin-right: 0;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    margin-top: 0;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +80,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: third;
+    margin-top: 60px;
   }
 }
 
@@ -89,6 +94,24 @@
   }
 }
 
+.form__group--comment {
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
+}
+
 .form__submit {
+  margin-top: 30px;
+  padding-bottom: 16px;
   grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
