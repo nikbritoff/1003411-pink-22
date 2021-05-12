@@ -15,7 +15,7 @@
 
 .main-nav--opened {
   .main-nav__toggle {
-    background-color: sandybrown;
+    background-color: $blue-700;
   }
 
   .main-nav__list {
@@ -144,6 +144,7 @@
   list-style: none;
   background-color: $blue-700;
   display: none;
+  z-index: 5;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -166,12 +167,14 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: $blue-700;
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba($black, 0.15);
 
   @media (min-width: $desktop-width) {
     box-shadow: none;
     padding-top: 11px;
     padding-bottom: 11px;
+    background: none;
   }
 }
 
@@ -204,12 +207,13 @@
 .main-nav__toggle {
   width: 50px;
   height: 50px;
+  background: none;
   background-image: url("../img/icon-main-nav-toggle--open.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  background-color: blue;
+  // background-color: $blue-700;
 
   @media (min-width: $desktop-width) {
     display: none;
