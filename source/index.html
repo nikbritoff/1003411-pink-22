@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="page-header__nav main-nav main-nav--no-js">
         <div class="main-nav__toggles-wrapper">
           <a class="main-nav__logo">
@@ -19,7 +19,7 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фотографии</a>
@@ -32,13 +32,13 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__info page-info">
+      <div class="page-header__info page-info page-info--index">
         <div class="page-info__demonstration page-info__demonstration--index demonstration demonstration--index">
           <h1 class="visually-hidden">"Pink" - приложение, поднимающее настроение</h1>
           <p class="demonstration__slogan">Взгляните на жизнь иначе!</p>
         </div>
 
-        <div class="page-info__download page-info__download--visible download">
+        <div class="page-info__download download">
             <a class="button download__button button--download" href="#">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
@@ -68,28 +68,30 @@
         <div class="features__titles ask-answer">
           <div class="ask-answer__wrapper">
             <p class="ask-answer__ask">Устали от серости мегаполиса?</p>
-            <p class="ask-answer__answer">Нам есть, что вам предложить!</p>
+            <p class="ask-answer__answer">Нам есть, что вам<br> предложить!</p>
           </div>
         </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__caption">Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__caption">Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__caption">Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="features__list-container">
+          <ul class="features__list">
+            <li class="features__item features__item--gray">
+              <h3 class="features__caption">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item features__item--pink">
+              <h3 class="features__caption">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </li>
+            <li class="features__item features__item--hello ">
+              <h3 class="features__caption">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
         <div class="features__facts facts">
           <div class="facts__wrapper">
-            <b class="facts__caption">Эффект на 24 часа!</b>
+            <b class="facts__caption">Эффект на&nbsp;24&nbsp;часа!</b>
             <p class="facts__text">Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!</p>
+              что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="facts__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -109,23 +111,33 @@
               </blockquote>
             </li>
           </ul>
-          <button class="reviews__selector reviews__selector--prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__selector reviews__selector--next" type="button">Следующий отзыв</button>
-          <div class="slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <button class="reviews__selector reviews__selector--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="reviews__selector reviews__selector--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+          <div class="slider__toggles reviews__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </div>
         </div>
       </section>
 
       <section class="tariffs">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <div class="tariffs__wrapper slider">
+        <div class="tariffs__wrapper slider slider--gray">
           <table class="tariffs__table">
             <tr class="tariffs__row">
-              <th class="tariffs__header tariffs__header--empty"></th>
-              <th class="tariffs__header">
+              <th class="tariffs__header-empty"></th>
+              <th class="tariffs__header tariffs__header--invisible-left-border tariffs__header--rounded-corner-left">
                 <b class="tariffs__name">База</b>
                 <p class="tariffs__price">1,99 USD</p>
               </th>
@@ -133,52 +145,67 @@
                 <b class="tariffs__name">Стандарт</b>
                 <p class="tariffs__price">3,99 USD</p>
               </th>
-              <th class="tariffs__header">
+              <th class="tariffs__header tariffs__header--invisible-right-border tariffs__header--rounded-corner-right">
                 <b class="tariffs__name">Анлим</b>
                 <p class="tariffs__price">9,99 USD</p>
               </th>
             </tr>
-            <tr class="tariffs__row">
-              <td class="tariffs__function">Розовый фильтр</td>
-              <td class="tariffs__mark tariffs__mark--include">
+            <tr class="tariffs__row tariffs__row--second">
+              <td class="tariffs__table-item tariffs__function tariffs__function--rounded-corner-left-top">Розовый фильтр</td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--include">
+                <span class="tariffs__function-name">Розовый фильтр</span>
                 <span class="visually-hidden">Включено</span>
               </td>
-              <td class="tariffs__mark tariffs__mark--include">
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--include">
+                <span class="tariffs__function-name">Розовый фильтр</span>
                 <span class="visually-hidden">Включено</span>
               </td>
-              <td class="tariffs__mark tariffs__mark--include">
+              <td class=" tariffs__table-item tariffs__mark tariffs__mark--include">
+                <span class="tariffs__function-name">Розовый фильтр</span>
                 <span class="visually-hidden">Включено</span>
               </td>
             </tr>
             <tr class="tariffs__row">
-              <td class="tariffs__function">Смайлики</td>
-              <td class="tariffs__mark tariffs__mark--include">
-                <span class="visually-hidden">Включено</span>
-              </td>
-              <td class="tariffs__mark tariffs__mark--include">
-                <span class="visually-hidden">Включено</span>
-              </td>
-              <td class="tariffs__mark tariffs__mark--not-include">
+              <td class="tariffs__table-item tariffs__function">Смайлики</td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--not-include">
+                <span class="tariffs__function-name">Смайлики</span>
                 <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--include">
+                <span class="tariffs__function-name">Смайлики</span>
+                <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--include">
+                <span class="tariffs__function-name">Смайлики</span>
+                <span class="visually-hidden">Включено</span>
               </td>
             </tr>
             <tr class="tariffs__row">
-              <td class="tariffs__function">Комментарии</td>
-              <td class="tariffs__mark tariffs__mark--include">
+              <td class="tariffs__table-item tariffs__function">Комментарии</td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--not-include">
+                <span class="tariffs__function-name">Комментарии</span>
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--not-include">
+                <span class="tariffs__function-name">Комментарии</span>
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__table-item tariffs__mark tariffs__mark--include tariffs__mark--rounded-corner-right-bottom">
+                <span class="tariffs__function-name">Комментарии</span>
                 <span class="visually-hidden">Включено</span>
-              </td>
-              <td class="tariffs__mark tariffs__mark--not-include">
-                <span class="visually-hidden">Не включено</span>
-              </td>
-              <td class="tariffs__mark tariffs__mark--not-include">
-                <span class="visually-hidden">Не включено</span>
               </td>
             </tr>
           </table>
-          <div class="slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <div class="slider__toggles tariffs__toggles">
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </div>
         </div>
       </section>
@@ -186,9 +213,9 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__wrapper">
-          <div class="contacts__titles ask-answer-block">
-            <p class="ask-answer-block__ask">Остались вопросы?</p>
-            <p class="ask-answer-block__answer">Свяжитесь с нами!</p>
+          <div class="contacts__titles">
+            <p class="contacts__ask">Остались вопросы?</p>
+            <p class="contacts__answer">Свяжитесь с нами!</p>
           </div>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -197,7 +224,7 @@
             </li>
             <li class="contacts__item">
               <b class="contacts__caption">Пишите:</b>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__info contacts__info--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__caption">Приезжайте в гости:</b>
@@ -206,7 +233,7 @@
           </ul>
         </div>
         <div class="contacts__location">
-          <img src="img/location--mobile.png" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0fce14fe2442d68764e2f68a733922a099aa2c9541ed45d67c302989bcf6552&amp;source=constructor" width="320" height="200"></iframe>
         </div>
       </section>
     </main>
@@ -244,7 +271,7 @@
         </section>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>

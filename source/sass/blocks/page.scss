@@ -2,10 +2,15 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+  height: 100%;
 }
 
 .page__body {
   margin: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page__popup {

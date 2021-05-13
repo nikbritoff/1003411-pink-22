@@ -7,6 +7,18 @@
   }
 }
 
+.download__button {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
 .download__list {
   grid-column: 1 / 2;
 
@@ -15,7 +27,22 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.download__item:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
 .download__link {
@@ -40,10 +67,17 @@
 
 .download__text {
   grid-column: 1 / 2;
-
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

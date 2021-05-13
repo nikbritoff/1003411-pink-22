@@ -1,17 +1,66 @@
 .page-header {
+  min-height: 237px;
+}
 
-  // background:
-  //   url("../img/demostration-phone-screen.png") no-repeat 50% top,
-  //   url("../img/demostration-phone.png") no-repeat 50% top,
-  //   url("../img/demostration-background.png") no-repeat 50% top;
+.page-header--index {
+  .page-header__info {
+    margin-top: -66px;
+    padding-top: 90px;
+    padding-bottom: 0;
+    background:
+      url("../img/background-page-header-phone--mobile.png") no-repeat center top 175px,
+      url("../img/demostration-background.png") no-repeat center top;
+    background-color: $blue-700;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -109px;
+      padding-top: 204px;
+      padding-bottom: 112px;
+      background:
+        url("../img/background-page-header-phone--tablet.png") no-repeat center bottom,
+        url("../img/background-page-header-tablet.png") no-repeat center top;
+      background-color: $blue-700;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -110px;
+      padding-top: 209px;
+      padding-bottom: 124px;
+      background:
+        url("../img/background-page-header-phone--desktop.png") no-repeat calc(50% + 70px) bottom,
+        url("../img/background-page-header-desktop.png") no-repeat center top;
+      background-color: $blue-700;
+    }
+  }
+}
+
+.page-header__info {
+  margin-top: -66px;
+  padding-top: 95px;
+  padding-bottom: 42px;
   background-color: $blue-700;
+  background-image: url("../img/demostration-background.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -109px;
+    padding-top: 175px;
+    padding-bottom: 60px;
+    background-image: url("../img/background-page-header-tablet.png");
+  }
 
   @media (min-width: $desktop-width) {
-    min-height: 110px;
+    margin-top: -110px;
+    padding-top: 170px;
+    padding-bottom: 88px;
+    background-image: url("../img/background-page-header-desktop.png");
   }
 }
 
 .page-header__nav {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 300px 620px;

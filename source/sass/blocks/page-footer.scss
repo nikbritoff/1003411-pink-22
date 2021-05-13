@@ -1,30 +1,36 @@
 .page-footer {
   margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+  }
 }
 
 .page-footer__wrapper {
   width: 290px;
   margin: 0 auto;
-  outline: 2px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    outline: 2px solid red;
     display: grid;
     justify-content: center;
-    grid-template-columns: 172px 172px 172px;
-    column-gap: 52px;
+    grid-template-columns: 172px 178px 172px;
+    column-gap: 49px;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    outline: 2px solid yellowgreen;
-    display: grid;
-    grid-template-columns: 166px 166px 166px;
-    column-gap: 221px;
+    grid-template-columns: 166px 178px 166px;
+    column-gap: 215px;
   }
 }
 
@@ -32,10 +38,12 @@
   display: block;
   width: 145px;
   height: 40px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     justify-self: start;
+    align-self: start;
   }
 }
 
@@ -44,13 +52,19 @@
 }
 
 .page-footer__social {
+  margin-top: 40px;
+
   @media (min-width: $tablet-width) {
     justify-self: center;
+    margin: 0;
   }
 }
 
 .page-footer__copyright {
+  margin-top: 40px;
+
   @media (min-width: $tablet-width) {
     justify-self: end;
+    margin: 0;
   }
 }
