@@ -1,33 +1,33 @@
 .page-info {
   color: $white;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 28px;
-  padding-bottom: 45px;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // padding-top: 28px;
+  // padding-bottom: 45px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 66px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding-top: 66px;
+  // }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 60px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 60px;
+  // }
 }
 
-.page-info--index {
-  padding-top: 24px;
-  padding-bottom: 0;
+// .page-info--index {
+//   padding-top: 24px;
+//   padding-bottom: 0;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 95px;
-    padding-bottom: 112px;
-  }
+//   @media (min-width: $tablet-width) {
+//     padding-top: 95px;
+//     padding-bottom: 112px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 126px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     padding-top: 100px;
+//     padding-bottom: 126px;
+//   }
+// }
 
 .page-info__wrapper {
   width: 280px;
@@ -90,15 +90,15 @@
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
-
   display: block;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 300px 300px;
     column-gap: 20px;
     justify-content: center;
-
+    width: auto;
     padding-top: 0;
     padding-bottom: 0;
   }

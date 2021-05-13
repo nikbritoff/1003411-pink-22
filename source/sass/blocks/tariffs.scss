@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 19px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 97px;
@@ -25,8 +26,8 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  position: relative;
   width: 320px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -196,7 +197,7 @@
 .tariffs__mark {
   background-repeat: no-repeat;
   padding-top: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
   background-position: 93% 55%;

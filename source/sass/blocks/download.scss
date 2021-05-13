@@ -27,10 +27,8 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: center;
   margin-bottom: 20px;
-  width: 204px;
   margin-left: auto;
   margin-right: auto;
 
@@ -41,6 +39,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
   }
+}
+
+.download__item:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
 .download__link {
