@@ -41,8 +41,8 @@
   .choice-info__list {
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 260px 240px 205px;
-      column-gap: 55px;
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 60px;
       row-gap: 40px;
       justify-content: center;
     }
@@ -124,17 +124,17 @@
 }
 
 .choice-info__caption {
+  position: relative;
+  top: 58px;
+  width: 280px;
+  margin-bottom: 38px;
+  padding: 0 20px;
   color: $primary-pink;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  position: relative;
-  top: 58px;
-  margin-bottom: 38px;
-  width: 280px;
   text-align: center;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -144,7 +144,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 940px;
     padding-left: 25px;
     padding-right: 25px;
   }
