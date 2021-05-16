@@ -24,40 +24,30 @@
     }
   }
 
-  .text-field__label::after {
-    content: "";
-    display: none;
-    height: 60px;
-    width: 61px;
-    position: absolute;
-    top: 2px;
-    right: 1px;
-    background-color: $gray-200;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 61px;
-      top: 1px;
-    }
-  }
-
-  .text-field__label--phone::after {
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  .text-field__label--mail::after {
-    background-image: url("../img/icon-mail.svg");
-  }
-
   .text-field__input {
     @media (min-width: $tablet-width) {
       margin-left: 0;
       padding-right: 70px;
+    }
+  }
+
+  .text-field__input--phone {
+    @media (min-width: $tablet-width) {
+      background: url("../img/icon-phone.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 434px, $gray-200 434px, $gray-200 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/icon-phone.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 310px, $gray-200 310px, $gray-200 100%);
+    }
+  }
+
+  .text-field__input--mail {
+    @media (min-width: $tablet-width) {
+      background: url("../img/icon-mail.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 434px, $gray-200 434px, $gray-200 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/icon-mail.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 310px, $gray-200 310px, $gray-200 100%);
     }
   }
 }
@@ -98,6 +88,7 @@
 
 .text-field__input:focus {
   outline-color: $primary-pink;
+  border-color: $primary-pink;
 }
 
 .text-field__input::placeholder {
