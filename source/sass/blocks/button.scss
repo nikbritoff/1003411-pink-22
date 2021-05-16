@@ -35,8 +35,26 @@
   color: $primary-pink;
 }
 
+.button--send:hover {
+  color: $white;
+  background-color: $primary-pink;
+}
+
+.button--send:active {
+  color: rgba($color: $white, $alpha: 0.3);
+}
+
 .button--cancel {
   color: $blue-700;
   border-color: $blue-700;
   opacity: 0.1;
+}
+
+.button--cancel:hover {
+  opacity: 0.3;
+}
+
+.button--cancel:active {
+  color: $white;
+  background-color: $blue-700;
 }

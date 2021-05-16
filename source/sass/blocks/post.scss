@@ -1,6 +1,37 @@
+.post {
+  background-color: $gray-100;
+}
+
 .post--best-of-day {
+  background: none;
+
   .post__image-wrapper {
-    width: 100%;
+    width: auto;
+    max-height: 137px;
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      max-height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: 506px;
+    }
+  }
+
+  .post__image {
+    width: 320px;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
   }
 
   .post__info {
@@ -10,6 +41,7 @@
 
     @media (min-width: $tablet-width) {
       width: 620px;
+      min-height: auto;
     }
 
     @media (min-width: $desktop-width) {
@@ -20,6 +52,7 @@
 
 .post__image-wrapper {
   display: flex;
+  justify-content: center;
   background-color: $gray-100;
   width: 280px;
   margin-left: auto;
@@ -27,10 +60,21 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    max-height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 400px;
   }
 }
 
-.post__image {
+.post__image-wrapper img {
   width: 100%;
-  object-fit: cover;
+  height: auto;
+}
+
+.post__info {
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+  }
 }
