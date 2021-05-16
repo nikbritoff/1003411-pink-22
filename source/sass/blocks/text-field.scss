@@ -3,20 +3,92 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.text-field--contacts {
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .text-field__label {
+    @media (min-width: $tablet-width) {
+      align-self: flex-start;
+      margin-top: 8px;
+      margin-left: 16px;
+    }
+  }
+
+  .text-field__input {
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      padding-right: 70px;
+    }
+  }
+
+  .text-field__input--phone {
+    @media (min-width: $tablet-width) {
+      background: url("../img/icon-phone.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 434px, $gray-200 434px, $gray-200 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/icon-phone.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 310px, $gray-200 310px, $gray-200 100%);
+    }
+  }
+
+  .text-field__input--mail {
+    @media (min-width: $tablet-width) {
+      background: url("../img/icon-mail.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 434px, $gray-200 434px, $gray-200 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/icon-mail.svg") no-repeat right 17px top 50%, linear-gradient(to right, $white, $white 310px, $gray-200 310px, $gray-200 100%);
+    }
+  }
 }
 
 .text-field__label {
   color: $primary-pink;
   font-size: 14px;
   text-transform: uppercase;
+  padding: 0 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    align-self: center;
+  }
 }
 
 .text-field__input {
+  font-family: "Open Sans", "Arial", sans-serif;
   color: $blue-700;
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   border: 2px solid $gray-200;
   border-radius: 1px;
-  padding: 23px 20px;
+  padding: 15px 20px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 19px;
+    width: 100%;
+  }
+}
+
+.text-field__input:hover {
+  border-color: $blue-700;
+}
+
+.text-field__input:focus {
+  outline-color: $primary-pink;
+  border-color: $primary-pink;
 }
 
 .text-field__input::placeholder {

@@ -4,6 +4,16 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
 }
 
 .competition-addictional__text {
@@ -11,5 +21,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

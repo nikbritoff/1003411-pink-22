@@ -3,25 +3,29 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 25px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 51px;
+    padding-bottom: 41px;
     border: 2px solid $gray-200;
     border-radius: 1px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 
 .comment__wrapper {
-  // @include phone-wrapper;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   @include desktop-wrapper;
-  // }
 }
 
 .comment__caption {
@@ -30,26 +34,43 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-bottom: 0;
   }
 }
 
 .comment__text {
+  font-family: inherit;
   width: 100%;
   color: $blue-700;
   font-size: 18px;
   line-height: 30px;
-  padding: 22px 20px;
+  padding: 14px 20px;
   border: 2px solid $gray-200;
   border-radius: 1px;
+  min-height: 200px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+    padding-right: 18px;
+    min-height: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 128px;
+  }
+}
+
+.comment__text:focus {
+  outline-color: $primary-pink;
 }
 
 .comment__text::placeholder {
