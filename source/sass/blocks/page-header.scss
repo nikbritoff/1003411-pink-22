@@ -35,6 +35,7 @@
 }
 
 .page-header__info {
+  min-height: 236px;
   margin-top: -66px;
   padding-top: 95px;
   padding-bottom: 42px;
@@ -44,6 +45,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    min-height: 440px;
     margin-top: -109px;
     padding-top: 175px;
     padding-bottom: 60px;
@@ -51,6 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 390px;
     margin-top: -110px;
     padding-top: 170px;
     padding-bottom: 88px;

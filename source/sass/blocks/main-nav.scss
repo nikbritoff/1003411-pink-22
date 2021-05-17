@@ -140,6 +140,15 @@
     width: 145px;
     height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.main-nav__logo img {
+  width: 100%;
+  height: auto;
 }
 
 .main-nav__list {

@@ -3,6 +3,74 @@
   font-size: 14px;
   line-height: 24px;
   background-color: $gray-100;
+  padding-left: 18px;
+  padding-top: 13px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-left: 27px;
+    padding-right: 30px;
+    padding-bottom: 24px;
+  }
+}
+
+.description--wide {
+  padding-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "info likes"
+      "text text";
+    column-gap: 40px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+
+  .description__info {
+    @media (min-width: $tablet-width) {
+      grid-area: info;
+    }
+  }
+
+  .description__likes {
+    @media (min-width: $tablet-width) {
+      grid-area: likes;
+      justify-self: right;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 30px;
+    }
+  }
+
+  .description__text {
+    @media (min-width: $tablet-width) {
+      grid-area: text;
+    }
+  }
+}
+
+.description__info {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .description__author {
@@ -10,13 +78,46 @@
 }
 
 .description__time {
+  font-size: 12px;
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: 3px;
+}
+
+.description__text {
+  margin: 0;
 }
 
 .description__likes {
+  position: relative;
   color: $primary-pink;
   font-size: 12px;
   text-transform: uppercase;
+  margin-top: 11px;
+  margin-bottom: 0;
+  padding-left: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+}
+
+.description__likes::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 5px;
+  display: block;
+  height: 12px;
+  width: 13px;
+  background-image: url("../img/icon-heart.svg");
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    right: 0;
+  }
 }
