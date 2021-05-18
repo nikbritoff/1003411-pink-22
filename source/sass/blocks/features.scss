@@ -44,17 +44,27 @@
   margin: 0 auto;
   padding-top: 83px;
   padding-bottom: 320px;
-  background-image: url("../img/background__features-phone--mobile.png");
+  background-image: url("../img/iphone-mobile.png");
   background-repeat: no-repeat;
   background-position: center bottom -43px;
+  background-size: 157px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 620px;
     padding-left: 310px;
     padding-top: 77px;
     padding-bottom: 44px;
-    background-image: url("../img/background__features-phone--tablet.png");
+    background-image: url("../img/iphone-tablet.png");
     background-position: left 6px;
+    background-size: 268px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -84,6 +94,8 @@
     margin-bottom: 0;
     padding-top: 363px;
     background-repeat: no-repeat;
+    background-position: left 65px top 45px, center top 5px;
+    background-size: 165px auto, 300px 297px;
   }
 }
 
@@ -93,28 +105,31 @@
 
 .features__item--gray {
   @media (min-width: $desktop-width) {
-    background:
-      url("../img/background-iphone-screen-gray.jpg") left 63px top 45px,
-      url("../img/background-iphone-no-screen.png") center top 5px;
-    background-repeat: no-repeat;
+    background-image: url("../img/iphone-screen-gray.jpg"), url("../img/iphone-no-screen.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-gray@2x.jpg"), url("../img/iphone-no-screen@2x.png");
+    }
   }
 }
 
 .features__item--pink {
   @media (min-width: $desktop-width) {
-    background:
-      url("../img/background-iphone-screen-pink.jpg") left 63px top 45px,
-      url("../img/background-iphone-no-screen.png") center top 5px;
-    background-repeat: no-repeat;
+    background-image: url("../img/iphone-screen-pink.jpg"), url("../img/iphone-no-screen.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-pink@2x.jpg"), url("../img/iphone-no-screen@2x.png");
+    }
   }
 }
 
 .features__item--hello {
   @media (min-width: $desktop-width) {
-    background:
-      url("../img/background-iphone-screen-pink-hello.jpg") left 63px top 45px,
-      url("../img/background-iphone-no-screen.png") center top 5px;
-    background-repeat: no-repeat;
+    background-image: url("../img/iphone-screen-pink-hello.jpg"), url("../img/iphone-no-screen.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-pink-hello@2x.jpg"), url("../img/iphone-no-screen@2x.png");
+    }
   }
 }
 

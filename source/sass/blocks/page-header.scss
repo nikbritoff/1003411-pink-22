@@ -7,29 +7,39 @@
     margin-top: -66px;
     padding-top: 90px;
     padding-bottom: 0;
-    background:
-      url("../img/background-page-header-phone--mobile.png") no-repeat center top 175px,
-      url("../img/demostration-background.png") no-repeat center top;
-    background-color: $blue-700;
+    background-image: url("../img/phone-in-hand-mobile.png"), url("../img/background-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center top 175px, center top;
+    background-size: 320px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-in-hand-mobile@2x.png"), url("../img/background-header-mobile@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       margin-top: -109px;
       padding-top: 204px;
       padding-bottom: 112px;
-      background:
-        url("../img/background-page-header-phone--tablet.png") no-repeat center bottom,
-        url("../img/background-page-header-tablet.png") no-repeat center top;
-      background-color: $blue-700;
+      background-image: url("../img/phone-in-hand-tablet.png"), url("../img/background-header-tablet.png");
+      background-position: center bottom, center top;
+      background-size: 660px auto, 1200px auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-in-hand-tablet@2x.png"), url("../img/background-header-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
       margin-top: -110px;
       padding-top: 209px;
       padding-bottom: 124px;
-      background:
-        url("../img/background-page-header-phone--desktop.png") no-repeat calc(50% + 70px) bottom,
-        url("../img/background-page-header-desktop.png") no-repeat center top;
-      background-color: $blue-700;
+      background-image: url("../img/phone-in-hand-desktop.png"), url("../img/background-header-desktop.png");
+      background-position: calc(50% + 70px) bottom, center top;
+      background-size: 1050px auto, 2560px auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-in-hand-desktop@2x.png"), url("../img/background-header-desktop@2x.png");
+      }
     }
   }
 }
@@ -39,17 +49,27 @@
   margin-top: -66px;
   padding-top: 95px;
   padding-bottom: 42px;
-  background-color: $blue-700;
-  background-image: url("../img/demostration-background.png");
+  background-image: url("../img/background-header-mobile.png");
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-color: $blue-700;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-header-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
     margin-top: -109px;
     padding-top: 175px;
     padding-bottom: 60px;
-    background-image: url("../img/background-page-header-tablet.png");
+    background-image: url("../img/background-header-tablet.png");
+    background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-header-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +77,12 @@
     margin-top: -110px;
     padding-top: 170px;
     padding-bottom: 88px;
-    background-image: url("../img/background-page-header-desktop.png");
+    background-image: url("../img/background-header-desktop.png");
+    background-size: 2560px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-header-desktop@2x.png");
+    }
   }
 }
 
