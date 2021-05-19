@@ -204,7 +204,6 @@
 
   @media (min-width: $tablet-width) {
     background-position: center;
-    // width: 154px;
   }
 }
 
@@ -215,14 +214,6 @@
 .tariffs__mark--not-include {
   background-image: url("../img/icon-mark-not-include.svg");
 }
-
-// .tariffs__mark--rounded-corner-right-bottom {
-//   border-radius: 0 0 5px 0;
-// }
-
-// .tariffs__mark:last-child {
-//   border-right: 2px solid $gray-200;
-// }
 
 .tariffs__toggles {
   margin-top: 32px;

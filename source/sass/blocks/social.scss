@@ -29,6 +29,10 @@
   border-color: $blue-700;
 }
 
+.social__link:active {
+  opacity: 0.1;
+}
+
 .social__link--twitter {
   background-image: url("../img/icon-social-twitter.svg");
 }

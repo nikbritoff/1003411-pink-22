@@ -18,8 +18,20 @@
 .copyright__link {
   margin-left: 14px;
   display: flex;
+
+  .copyright__icon {
+    fill: $blue-700;
+  }
 }
 
-.copyright__link:hover path {
-  fill: $blue-700;
+.copyright__link:hover {
+  .copyright__icon {
+    fill: $primary-pink;
+  }
+}
+
+.copyright__link:active {
+  .copyright__icon {
+    fill: rgba($color: $blue-700, $alpha: 0.1);
+  }
 }
