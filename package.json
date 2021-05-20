@@ -32,7 +32,6 @@
     "test": "npm run editorconfig && npm run stylelint",
     "htmlminify": "htmlminify",
     "jsminify": "jsminify",
-    "createDevSprite": "createDevSprite",
     "createSprite": "createSprite",
     "createWebp": "createWebp",
     "imageMinify": "imageMinify",

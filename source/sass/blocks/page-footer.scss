@@ -48,24 +48,30 @@
 }
 
 .page-footer__logo:hover {
-  .page-footer__logo-image {
+  .page-footer__logo-text {
+    fill: $primary-pink;
+  }
+
+  .page-footer__logo-glass {
     fill: $primary-pink;
   }
 }
 
 .page-footer__logo:active {
-  opacity: 0.3;
-
   .page-footer__logo-image {
+    opacity: 0.3;
+  }
+
+  .page-footer__logo-text {
     fill: $blue-700;
   }
 }
 
-.page-footer__logo-image {
+.page-footer__logo-text {
   fill: $blue-700;
 }
 
-.page-footer__logo:hover path {
+.page-footer__logo-glass {
   fill: $primary-pink;
 }
 

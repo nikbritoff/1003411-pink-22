@@ -95,25 +95,7 @@ const createWebp = function() {
 
 exports.createWebp = createWebp;
 
-
-// Pack svg sprite
-
-const createDevSprite = function() {
-  return gulp.src("source/img/icons/*.svg")
-  .pipe(cheerio({
-    run: function ($) {
-      $('[stroke]').removeAttr('stroke');
-    },
-    parserOptions: {xmlMode: true}
-  }))
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
-}
-
-exports.createDevSprite = createDevSprite;
-
-  // Sprite for build
+// Sprite svg
 
 const createSprite = function() {
   return gulp.src("build/img/icons/*.svg")

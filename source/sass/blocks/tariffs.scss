@@ -71,6 +71,42 @@
   }
 }
 
+.tariffs__header--hit {
+  position: relative;
+  overflow: hidden;
+}
+
+.tariffs__header--hit::before {
+  content: "Хит";
+  position: absolute;
+  left: -28px;
+  top: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 24px;
+  transform: rotate(-45deg);
+  background-color: $primary-pink;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    height: 19px;
+    left: -35px;
+    top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 24px;
+    left: -26px;
+    top: 17px;
+  }
+}
+
 .tariffs__header--invisible-left-border {
   border-left-color: $blue-700;
 }
