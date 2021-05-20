@@ -171,9 +171,10 @@
   }
 }
 
-.upload_buttons-wrapper {
+.upload__buttons-wrapper {
   grid-column: 1 / -1;
-  padding: 40px 0;
+  padding-top: 35px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
