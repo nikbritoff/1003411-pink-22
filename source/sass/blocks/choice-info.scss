@@ -51,6 +51,7 @@
   .choice-info__item {
     @media (min-width: $desktop-width) {
       width: 100%;
+      max-width: 272px;
     }
   }
 
@@ -80,6 +81,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-bottom: 50px;
   }
 
   .choice-info__wrapper {

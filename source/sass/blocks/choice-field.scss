@@ -13,7 +13,9 @@
   padding-left: 60px;
   min-height: 41px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin-bottom: auto;
 
   @media (min-width: $desktop-width) {
     padding-left: 55px;
