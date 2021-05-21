@@ -11,13 +11,20 @@
 }
 
 .social__item + .social__item {
-  margin-left: 12px;
+  margin-left: 8px;
+  // margin-left: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+  }
 }
 
 .social__link {
   display: block;
-  width: 51px;
-  height: 51px;
+  width: 54px;
+  height: 54px;
+  // width: 51px;
+  // height: 51px;
   background-color: $white;
   border: 3px solid rgba($blue-700, 0.1);
   border-radius: 50%;
