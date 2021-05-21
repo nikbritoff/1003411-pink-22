@@ -20,6 +20,10 @@
   }
 }
 
+.filter__toggle:active {
+  background-color: $primary-pink;
+}
+
 .filter__button {
   display: flex;
   padding: 0;
